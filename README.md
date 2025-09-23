@@ -22,20 +22,21 @@ todo-cli is a lightweight and efficient command-line tool for managing your dail
 2. Install dependencies:
 
     - Install [Python](https://www.python.org/downloads/release/python-3119) version 3.11.9 or higher.
-    - You don't need admin rights.
+    - You will need admin rights.
+    
+    ```batch
+    pip install -r requirements.txt
+    ```
+    - Make sure that the Python Script folder is in the path environment variable
+    - Common paths (replace 311 with your python version):
+        1. C:\Users\%USERNAME%\AppData\Roaming\Python\Python311\Scripts
+        2. C:\Program Files\Python311\Scripts
 
-3. Build the project:
-    ```batch
-    python build.py
-    ```
-4. Install the program:
-    ```batch
-    python install.py
-    ```
-5. Uninstallation:
-    ```batch
-    python uninstall.py
-    ```
+3. Install the program:
+    - Goto the scripts folder and right click [auto.ps1](scripts/auto.ps1) and run it with Powershell
+
+4. Uninstallation:
+    - Goto the scripts folder and run [uninstall.bat](scripts/uninstall.bat)
 
 ## Usage
 
