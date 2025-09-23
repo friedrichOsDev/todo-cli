@@ -10,9 +10,9 @@ todo-cli is a lightweight and efficient command-line tool for managing your dail
 - **Delete a todo**: `todo delete -t <title>` - Deletes the specified todo.
 - **Mark a todo as done**: `todo mark -t <title>` - Marks the specified todo as completed.
 - **View status**: `todo status` - Lists all todos and shows their completion status.
-- **Get help**: `todo --help` - Shows all commands.
+- **Get help**: `todo help` - Shows all commands.
 
-## Installation (Windows)
+## Installation (Windows only)
 
 1. Clone the repository:
     ```batch
@@ -21,13 +21,9 @@ todo-cli is a lightweight and efficient command-line tool for managing your dail
     ```
 2. Install dependencies:
 
-    Install [Python](https://www.python.org/downloads/release/python-3119) version 3.11.9 or higher.
-    
-    You don't need admin rights.
+    - Install [Python](https://www.python.org/downloads/release/python-3119) version 3.11.9 or higher.
+    - You don't need admin rights.
 
-    ```batch
-    pip install -r requirements.txt
-    ```
 3. Build the project:
     ```batch
     python build.py
@@ -40,25 +36,20 @@ todo-cli is a lightweight and efficient command-line tool for managing your dail
     ```batch
     python uninstall.py
     ```
-## ~~[Installation (Linux) - todo](docs/installation.md#Linux)~~
-## ~~[Installation (MacOS) - todo](docs/installation.md#MacOS)~~
 
 ## Usage
 
 After installation, run `todo` from your terminal or command prompt.  
-Example commands:
+
+**Example commands:**
 
 1. Add a todo: `todo add -t <title> -m <message>`
 2. Delete a todo: `todo delete -t <title>`
 3. Mark as done: `todo mark -t <title>`
 4. View status: `todo status`
+5. Get help: `todo help`
 
-### Installation directory:
-__Windows:__ `C:\Users\<Your Username>\todo-cli`
-
-__Linux:__ `/home/<Your Username>/todo-cli`
-
-__MacOS:__ `/Users/<Your Username>/todo-cli`
+**Installation directory:** `C:\Users\<Your Username>\todo-cli`
 
 ### Examples (Windows Command Prompt)
 ```batch
@@ -68,7 +59,7 @@ todo status
 todo mark -t "Buy milk"
 todo status
 todo delete -t "Buy milk"
-todo --help
+todo help
 ```
 
 #### Output (Windows Command Prompt)
