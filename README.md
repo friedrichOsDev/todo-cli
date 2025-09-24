@@ -8,6 +8,7 @@ todo-cli is a lightweight and efficient command-line tool for managing your dail
 
 - **Add a todo**: `todo add -t <title> -m <message>` - Adds a new todo.
 - **Delete a todo**: `todo delete -t <title>` - Deletes the specified todo.
+- **Delete all completed todos**: `todo delete -a` - Deletes all completed todos.
 - **Mark a todo as done**: `todo mark -t <title>` - Marks the specified todo as completed.
 - **View status**: `todo status` - Lists all todos and shows their completion status.
 - **Get help**: `todo help` - Shows all commands.
@@ -22,7 +23,7 @@ todo-cli is a lightweight and efficient command-line tool for managing your dail
 2. Install dependencies:
 
     - Install [Python](https://www.python.org/downloads/release/python-3119) version 3.11.9 or higher.
-    - You will need admin rights.
+    - You will need admin rights for [auto.ps1](scripts/auto.ps1) (aka the installer).
     
     ```batch
     pip install -r requirements.txt
@@ -46,25 +47,23 @@ After installation, run `todo` from your terminal or command prompt.
 
 1. Add a todo: `todo add -t <title> -m <message>`
 2. Delete a todo: `todo delete -t <title>`
-3. Mark as done: `todo mark -t <title>`
-4. View status: `todo status`
-5. Get help: `todo help`
+3. Delete all completed todos: `todo delete -a`
+4. Mark as done: `todo mark -t <title>`
+5. View status: `todo status`
+6. Get help: `todo help`
 
 **Installation directory:** `C:\Users\<Your Username>\todo-cli`
 
 ### Examples (Windows Command Prompt)
 ```batch
-todo status
 todo add -t "Buy milk" -m "Remember to buy milk after work"
-todo status
 todo mark -t "Buy milk"
 todo status
 todo delete -t "Buy milk"
-todo help
 ```
 
 #### Output (Windows Command Prompt)
-![](docs/output.png)
+![](output.png)
 
 ## Contributing
 
